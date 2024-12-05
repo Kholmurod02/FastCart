@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+  }
+  .loader {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(58, 58, 58);
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .loader:hover {
+    background-color: rgb(26, 26, 26);
+  }
+  
+  .loader:hover svg {
+    color: white;
+  }
+  
+  .loader svg {
+    color: rgba(255, 255, 255, 0.651);
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+  
+  /* .point {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 6px;
+      height: 6px;
+      background-color: rgb(0, 255, 0);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+  
+  /* .point::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background-color: rgb(0, 255, 0);
+      border-radius: 25px;
+      animation: loop 1s 0s infinite;
+    } */
+  
+  @keyframes loop {
+    0% {
+      background-color: rgb(0, 255, 0);
+      width: 1px;
+      height: 1px;
+    }
+  
+    100% {
+      background-color: rgba(0, 255, 0, 0);
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  .btnSearch {
+    border: none;
+    /* background-color: white; */
+    background-color: rgba(28, 37, 54, 1);
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+  
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(28, 37, 54, 1);
+    height: 50px;
+  }
+  
+  .bellIcon {
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .size-6 {
+    width: 20px;
+    margin-right: 20px;
+  
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 200px;
+    background-color: rgba(28, 37, 54, 1);
+    height: 554px;
+  }
+  .dashBd{
+  background-color:rgba(28, 37, 54, 1) ;
+  color: white;
+  border:none;
+  margin-top: 50px;
+  }
+  .dashBdProd{
+  background-color:rgba(28, 37, 54, 1) ;
+  color: white;
+  border:none;
+  }
+  .dashBdOther{
+  background-color:rgba(28, 37, 54, 1) ;
+  color: white;
+  border:none;
+  }
+  .dashBdOrder{
+  background-color:rgb(255, 255, 255) ;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  }
+  .sec1{
+    display: flex;
+  }
+.btnCancel{
+  width: 90px;
+  background-color: white;
+  color: rgba(37, 99, 235, 1);
+  border: 1px solid silver;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.btnAddSave{
+  width: 90px;
+  background-color: rgba(37, 99, 235, 1);
+  color: rgb(255, 255, 255);
+  border: 1px solid silver;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.size-7{
+  width: 15px;
+}
+.B,.I,.U,.link,.lines,.tx{
+  font-size: 14px;
+  background-color: white;
+  border: none;
+}
+.shrift{
+  display:flex ; 
+  text-align: center; 
+  padding: 6px; 
+  border: solid 1px silver;
+  width: 500px;
+  justify-content: ;
+  gap: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.btnBack{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+.addMore{
+  background-color: rgb(255, 255, 255);
+  color:  rgba(37, 99, 235, 1);
+  border: none;
+  margin-top: 10px;
+  width: 100px;
+}
+.btnCreatNew{
+  background-color: rgb(255, 255, 255);
+  color: rgb(83, 120, 245);
+  border: none;
+}
+.size-9{
+  width: 15px;
+}
+.blue{
+  width: 30px;
+  height: 30px;
+  background-color: rgba(160, 188, 224, 1);
+  border-radius: 50%;
+}
+.red{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+.green{
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50%;
+}
+.orange{
+  width: 30px;
+  height: 30px;
+  background-color:orange;
+  border-radius: 50%;
+}
+.bluevio{
+  width: 30px;
+  height: 30px;
+  background-color :blueviolet;
+  border-radius: 50%;
+}
+.gold{
+  width: 30px;
+  height: 30px;
+  background-color :gold;
+  border-radius: 50%;
+}
+.colors{
+  margin-left: 600px;
+  border: 1px solid silver;
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: -470px;
+}
+.add{
+  gap: 20px;
+  margin-left: 20px;
+} 
+.file-upload-form {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.file-upload-label input {
+  display: none;
+}
+.file-upload-label svg {
+  height: 50px;
+  fill: rgb(82, 82, 82);
+  margin-bottom: 20px;
+}
+.file-upload-label {
+  cursor: pointer;
+  background-color: #ddd;
+  padding: 30px 70px;
+  border-radius: 40px;
+  border: 2px dashed rgb(82, 82, 82);
+  /* box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719); */
+}
+.file-upload-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 300px;
+  margin-top: ;
+}
+.browse-button {
+  background-color: rgb(115, 115, 115);
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s;
+}
+.browse-button:hover {
+  background-color: rgb(14, 14, 14);
+}
+.photoBase{
+  margin-left: 570px;
+  margin-top: 50px;
+  width: 300px; 
+}
+.inpfile{
+  margin-left: 600px;
+  margin-top: 10px;
+  width: 300px;
+}

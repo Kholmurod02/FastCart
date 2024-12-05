@@ -1,0 +1,206 @@
+* {
+  margin: 0px;
+}
+
+.loader {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(58, 58, 58);
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.loader:hover {
+  background-color: rgb(26, 26, 26);
+}
+
+.loader:hover svg {
+  color: white;
+}
+
+.loader svg {
+  color: rgba(255, 255, 255, 0.651);
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+/* .point {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 6px;
+      height: 6px;
+      background-color: rgb(0, 255, 0);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+
+/* .point::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background-color: rgb(0, 255, 0);
+      border-radius: 25px;
+      animation: loop 1s 0s infinite;
+    } */
+
+@keyframes loop {
+  0% {
+    background-color: rgb(0, 255, 0);
+    width: 1px;
+    height: 1px;
+  }
+
+  100% {
+    background-color: rgba(0, 255, 0, 0);
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.btnSearch {
+  border: none;
+  /* background-color: white; */
+  background-color: rgba(28, 37, 54, 1); 
+  color: white;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(28, 37, 54, 1);
+  height: 50px;
+}
+
+.bellIcon {
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.size-6 {
+  width: 20px;
+  margin-right: 20px;
+
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 200px;
+  background-color: rgba(28, 37, 54, 1);
+  height: 554px;
+}
+
+.dashBdOrder {
+  background-color: rgba(28, 37, 54, 1);
+  color: white;
+  border: none;
+}
+
+.dashBd {
+  background-color: rgba(28, 37, 54, 1);
+  color: white;
+  border: none;
+  margin-top: 50px;
+}
+
+.dashBdOther {
+  background-color: rgba(28, 37, 54, 1);
+  color: white;
+  border: none;
+}
+
+.dashBdProd {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
+
+.sec1 {
+  display: flex;
+}
+
+.btnAdd {
+  border: none;
+  background-color: rgba(37, 99, 235, 1);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 800px;
+}
+
+.size-2 {
+  width: 15px;
+  background-color: white;
+}
+
+.btnSearch {
+  border: none;
+  background-color: white;
+  color: black;
+  margin-left: 10px;
+}
+
+.size-3 {
+  width: 20px;
+  color: red;
+}
+
+table {
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 30px auto;
+}
+
+th,
+td {
+  border-bottom: 1px solid silver;
+  height: 35px;
+}
+.size-edit{
+  width: 20px;
+  color: black;
+}
+.size-del{
+  width: 20px;
+  color: red;
+}
+.btnEdit{
+  border: none;
+  background-color: white;
+}
+.btnDel{
+  border: none;
+  background-color: white;
+}
+.product{
+  display: flex;
+}
+.img{
+  width: 14%;
+  margin-right: 30px;
+}
+.Outofstock{
+  /* background-color: rgba(230, 233, 244, 1); */
+  color: red;
+  /* width: 100px; */
+  /* border-radius: 4px; */
+  /* height: 10px; */
+}
+ 

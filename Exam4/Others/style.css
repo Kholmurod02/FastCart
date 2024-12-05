@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+  }
+  .loader {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(58, 58, 58);
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .loader:hover {
+    background-color: rgb(26, 26, 26);
+  }
+  
+  .loader:hover svg {
+    color: white;
+  }
+  
+  .loader svg {
+    color: rgba(255, 255, 255, 0.651);
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+  
+  /* .point {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 6px;
+      height: 6px;
+      background-color: rgb(0, 255, 0);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+  
+  /* .point::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background-color: rgb(0, 255, 0);
+      border-radius: 25px;
+      animation: loop 1s 0s infinite;
+    } */
+  
+  @keyframes loop {
+    0% {
+      background-color: rgb(0, 255, 0);
+      width: 1px;
+      height: 1px;
+    }
+  
+    100% {
+      background-color: rgba(0, 255, 0, 0);
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  .btnSearch {
+    border: none;
+    /* background-color: white; */
+    background-color: rgba(28, 37, 54, 1);
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+  
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(28, 37, 54, 1);
+    height: 50px;
+  }
+  
+  .bellIcon {
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .size-6 {
+    width: 20px;
+    margin-right: 20px;
+  
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 200px;
+    background-color: rgba(28, 37, 54, 1);
+    height: 554px;
+  }
+  .dashBdOrder{
+  background-color:rgba(28, 37, 54, 1) ;
+  color: white;
+  border:none;
+  }
+  .dashBdProd{
+  background-color:rgba(28, 37, 54, 1) ;
+  color: white;
+  border:none;
+  }
+  .dashBd{
+  background-color:rgba(28, 37, 54, 1) ;
+  color: white;
+  border:none;
+  margin-top: 50px;
+  }
+  .dashBdOther{
+  background-color:rgb(255, 255, 255) ;
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
+.pCat{
+  width: 100px;
+  background-color: rgba(219, 234, 254, 1);
+  color: blue;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.sec1{
+  display: flex;
+}
+.btnCat{
+  width: 100px;
+  background-color: rgba(37, 99, 235, 1);
+  color: rgb(255, 255, 255);
+  border: 1px solid silver;
+  border-radius: 4px;
+  /* height: 20px; */
+  padding: 5px;
+  margin-left: 850px;
+}
+.size-5{
+  width: 15px;
+}
+.divCategory{
+  width: 300px;
+  box-shadow: 0px 0px 5px silver;
+  padding: 10px;
+  border-radius: 5px;
+}
+.imgCategory{
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+.size-11{
+  width: 25px;
+  /* color: blue; */
+}
+.btnEd{
+color: blue;
+background-color: rgba(255, 255, 255, 0);
+border: none;
+margin-left: 250px;
+margin-top: 15px;
+}
+.btnDell{
+color: red;
+background-color: rgba(255, 255, 255, 0);
+border: none;
+margin-left: 250px;
+margin-top: 15px;
+}
+.divCateg{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin:50px ;
+}
+.modalCateg{
+  margin: 80px auto;
+  width: 300px;
+  /* height: 200px; */
+  border: none;
+  border-radius: 5px;
+}
+.btnX{
+  background-color: white;
+  border: none;
+}
+.btnCancel
+{
+  background-color: white;
+  border: solid 1px rgb(10, 37, 244);
+  color: blue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.btnCreat
+{
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100px;
+  /* margin-top: -200px;
+  margin-left: 50px; */
+}
+.btnEdCancel
+{
+  background-color: white;
+  border: solid 1px rgb(10, 37, 244);
+  color: blue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.btnEdCreat
+{
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100px;
+  /* margin-top: -200px;
+  margin-left: 50px; */
+}
+
+.editmodalCateg{
+  margin: 80px auto;
+  width: 300px;
+  /* height: 200px; */
+  border: none;
+  border-radius: 5px;
+}

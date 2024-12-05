@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+    <body>
+        
+        <div class="top">
+            <img src="../photos/fastcart.png" alt="">
+            <p>
+            <form class="form">
+                <button class="btnSearch">
+                    <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-labelledby="search">
+                        <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                            stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                </button>
+                <input class="input" placeholder="  Search ...." required="" type="text" style="height:20px ;">
+                <!-- <button class="reset" type="reset">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                      </svg>
+                  </button> -->
+            </form>
+            </p>
+            <div class="bell">
+                <svg viewBox="0 0 24 24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="bellIcon">
+                    <path
+                        d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z"
+                        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"></path>
+                </svg>
+            </div>
+
+        </div>
+
+
+        <div class="sec1">
+
+            <div class="menu">
+
+                <button style="display: flex; align-items: center; font-size: 20px;" class="dashBd">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    <span style="margin-top:2px ;">Dashboard</span>
+                </button>
+
+                <button style="display: flex; align-items: center; font-size: 20px;" class="dashBdOrder">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <span style="margin-top:2px ;">Orders</span>
+                </button>
+
+                <button style="display: flex; align-items: center; font-size: 20px;" class="dashBdProd">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                    </svg>
+
+                    <span style="margin-top:2px ;">Products</span>
+                </button>
+
+                <button style="display: flex; align-items: center; font-size: 20px;" class="dashBdOther">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                    </svg>
+
+                    <span style="margin-top:2px ;">Other</span>
+                </button>
+
+            </div>
+
+            <div class="add">
+                <form class="addForm">
+                <div style="display: flex; justify-content: space-between; width: 1100px; ">
+                    <h1>
+                        <button class="btnBack">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                        </button>
+                        Products / Add New
+                    </h1>
+                    <div style="display:flex ;">
+                        <button class="btnCancel">Cancel</button>
+                        <button type="submit" class="btnAddSave">Save</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Information</h3>
+                    <div style="display:flex; gap: 10px;">
+                        <input type="text" name="prodName" id="" placeholder="Product Name" style="width: 400px;">
+                        <input type="text" placeholder="Code" style="width:90px ; height: 25px;">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="shrift">
+                        <h4>Normal</h4>
+                        <button class="B" style="margin-left: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-7">
+                                <path stroke-linejoin="round"
+                                    d="M6.75 3.744h-.753v8.25h7.125a4.125 4.125 0 0 0 0-8.25H6.75Zm0 0v.38m0 16.122h6.747a4.5 4.5 0 0 0 0-9.001h-7.5v9h.753Zm0 0v-.37m0-15.751h6a3.75 3.75 0 1 1 0 7.5h-6m0-7.5v7.5m0 0v8.25m0-8.25h6.375a4.125 4.125 0 0 1 0 8.25H6.75m.747-15.38h4.875a3.375 3.375 0 0 1 0 6.75H7.497v-6.75Zm0 7.5h5.25a3.75 3.75 0 0 1 0 7.5h-5.25v-7.5Z" />
+                            </svg>
+
+                        </button>
+                        <button class="I">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-7">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5.248 20.246H9.05m0 0h3.696m-3.696 0 5.893-16.502m0 0h-3.697m3.697 0h3.803" />
+                            </svg>
+
+                        </button>
+
+                        <button class="U">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-7">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.995 3.744v7.5a6 6 0 1 1-12 0v-7.5m-2.25 16.502h16.5" />
+                            </svg>
+                        </button>
+
+                        <button class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="size-7">
+                                <path
+                                    d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+                                <path
+                                    d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+                            </svg>
+                        </button>
+
+                        <button class="lines">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="size-7">
+                                <path fill-rule="evenodd"
+                                    d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm0 10.5a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1-.75-.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <button class="lines">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="size-7">
+                                <path fill-rule="evenodd"
+                                    d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm0 10.5a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75ZM2 10a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 2 10Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <button class="tx"><svg class="size-7" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.89062 3.43677H13.8906" stroke="#262626" stroke-width="2.00231"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.89062 11.9468L10.2406 3.43677" stroke="#262626" stroke-width="2.00231"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.8906 11.0012L15.8906 14.7834" stroke="#262626" stroke-width="2.00231"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15.8906 11.0012L11.8906 14.7834" stroke="#262626" stroke-width="2.00231"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M9.39063 13.8379H3.39063C3.11448 13.8379 2.89062 14.0496 2.89062 14.3107C2.89062 14.5718 3.11448 14.7834 3.39063 14.7834H9.39063C9.66677 14.7834 9.89063 14.5718 9.89063 14.3107C9.89063 14.0496 9.66677 13.8379 9.39063 13.8379Z"
+                                    fill="#262626" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div style="display:flex ; gap:20px ; flex-direction: column; width: 520px;">
+                        <textarea name="descipt" id="" cols="30" rows="10" placeholder="Description"
+                            style="margin-top: 10px;"></textarea>
+                        <div>
+                            <select name="selCategory" style="height: 40px; width:260px ;">
+                                <option value="">Category</option>
+                                <option value="woman">Woman's Fashion</option>
+                                <option value="man">Man's Fashion</option>
+                                <option value="electronic">Electronics</option>
+                            </select>
+
+                            <select name="selBrands" id="" style="height: 40px; width: 250px;">
+                                <option value="">Brands</option>
+                                <option value="apple">Apple</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="nike">Nike</option>
+                                <option value="adidas">Adidas</option>
+                                <option value="bmw">BMW</option>
+                                <option value="byd">BYD</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="price">
+                        <input style="height: 30px; margin-top: 10px;" type="number" name="price" id=""
+                            placeholder="Product Price">
+                        <input style="height: 30px; margin-top: 10px;" type="number" name="" id=""
+                            placeholder="Discount">
+                        <input style="height: 30px; margin-top: 10px;" type="number" name="count" id=""
+                            placeholder="Count">
+                    </div>
+
+                    <div class="options" style="width: 550px;">
+                        <div>
+                            <fieldset style="width: 250px; border-radius:5px ; border:1px solid grey ; ">
+                                <select name="size" id="" style="width: 240px; ; border: none;">
+                                    <option value="all">Size</option>
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                </select>
+                                <legend style="color:grey ; font-size:13px ;">Option 1</legend>
+                            </fieldset>
+
+                            <fieldset style="width: 250px; border-radius:5px ; border:1px solid grey ; ">
+                                <select name="selvazn" id="" style="width: 240px; ; border: none;">
+                                    <option value="all">Weigth</option>
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">50</option>
+                                    <option value="">100</option>
+                                </select>
+                                <legend style="color:grey ; font-size:13px ;">Option 2</legend>
+                            </fieldset>
+                            <button class="addMore">+ Add More</button>
+                        </div>
+                    </div>
+
+                    <div class="colors">
+                        <div style="display:flex;padding: 10px;justify-content: space-between;">
+                            <h3>Colour</h3>
+                            <button class="btnCreatNew">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-9">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                </svg>
+                                <span style="margin-bottom: 20px;"> Creat New</span>
+                            </button>
+                        </div>
+                        <div style="display:flex; justify-content: space-between; margin-top: 20px;">
+                            <div class="blue"></div>
+                            <div class="orange"></div>
+                            <div class="red"></div>
+                            <div class="green"></div>
+                            <div class="bluevio"></div>
+                            <div class="gold"></div>
+                            <input type="color" name="color"
+                                style="background-color:white; width:30px; border: none; border-radius: 50%;">
+                        </div>
+
+                    </div>
+                        <input type="file" name="inpfile"  class="inpfile">
+                    
+       
+               </form>
+               
+
+                    </div>
+                </div>
+            </div>
+            <script type="module" src="main.js"></script>
+    </body>
+
+</html>
